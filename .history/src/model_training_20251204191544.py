@@ -179,7 +179,6 @@ class ChurnModelTrainer:
         # Train models
         self.train_logistic_regression(X_train, y_train)
         self.train_random_forest(X_train, y_train)
-        self.train_xgboost(X_train, y_train)
         
         # Evaluate models
         for model_name, model in self.models.items():
